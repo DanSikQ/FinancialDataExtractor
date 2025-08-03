@@ -70,6 +70,7 @@ def add_indicators(df):
     # Цвет столбцов:
     # Зеленый(AO > 0) — бычий импульс.
     # Красный(AO < 0) — медвежий импульс.
+
     df['AO'] = talib.SMA(df['Close'], timeperiod=5) - talib.SMA(df['Close'], timeperiod=34)
 
     # Acceleration/Deceleration (AC) — это осциллятор, измеряющий ускорение или замедление текущей рыночной силы (импульса) перед изменением цены.

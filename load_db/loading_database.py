@@ -2,6 +2,7 @@ import os
 import psycopg2
 import pandas as pd
 
+# Впишите сюда свои данные подключения
 DB_CONFIG = {
     'host': 'localhost',
     'port': '5433',
@@ -45,8 +46,8 @@ def get_data_path(filename):
     current_dir = os.getcwd()
     project_root = os.path.dirname(current_dir)
     if 'crypto' in filename.lower():
-        return os.path.join(project_root, 'task_1', 'data_about_crypto', filename)
-    return os.path.join(project_root, 'task_2', 'data', filename)
+        return os.path.join(project_root, 'Unload_Binance', 'data_about_crypto', filename)
+    return os.path.join(project_root, 'Unload_Yahoo', 'data', filename)
 
 
 def load_data_to_db(conn, table_name, file_path):
