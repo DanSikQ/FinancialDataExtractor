@@ -24,5 +24,4 @@
 ### `Pars_Yahoo.py`
 - Скрипт для парсинга данных с Yahoo Finance
 
-### `test_2.ipynb`
-- Jupyter Notebook для тестирования и анализа данных. Может включать:
+
